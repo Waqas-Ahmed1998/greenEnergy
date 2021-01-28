@@ -68,6 +68,17 @@ li {
 .box-shadow {
   box-shadow: 1px 1px 2px #333;
 }
+.bottom-line {
+  width: 50px;
+  height: 2px;
+  border: none;
+  margin: auto;
+  background-color: green;
+}
+.bgcolor.scrolled {
+  transition: 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .mr-1 {
   margin: 1rem;
 }
@@ -90,7 +101,7 @@ li {
   padding: 1.5rem;
 }
 .pd-2 {
-  padding: 1.5rem;
+  padding: 2.5rem;
 }
 .lg-heading {
   font-size: 3rem;
@@ -162,10 +173,7 @@ li {
   max-width: 1400px !important;
 }
 /* Navbar */
-.bgcolor.scrolled {
-  transition: 0.2s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.7);
-}
+
 .nav-cover {
   transition: 0.5s ease-in-out;
   position: fixed;
@@ -208,9 +216,10 @@ li {
   padding: 1rem;
   font-weight: 300;
 }
+/* Green energy  */
 
 #green-energy {
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
   text-align: center;
 }
 #green-energy p {
