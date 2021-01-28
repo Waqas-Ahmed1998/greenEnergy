@@ -1,0 +1,281 @@
+/* RESET  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+/* Utility Class  */
+
+.container {
+  margin: auto;
+  max-width: 1400px;
+}
+.links {
+  position: relative;
+}
+.current-home::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  right: 1.1rem;
+  width: 40px;
+  height: 2px;
+  display: inline-block;
+  background-color: yellowgreen;
+}
+.current-vision::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  right: 4.2rem;
+  width: 40px;
+  height: 2px;
+  display: inline-block;
+  background-color: yellowgreen;
+}
+.btn {
+  display: inline-block;
+  padding: 0.7rem 0.5rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  border: none;
+  transition: 0.1s ease-in-out;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.btn:hover {
+  background-color: seagreen;
+  color: #f4f4f4;
+}
+.box-shadow {
+  box-shadow: 1px 1px 2px #333;
+}
+.mr-1 {
+  margin: 1rem;
+}
+.mr-y1 {
+  margin: 1rem 0;
+}
+.mr-y2 {
+  margin: 2rem 0;
+}
+.mr-b {
+  margin-bottom: 1rem;
+}
+.mr-b2 {
+  margin-bottom: 2rem;
+}
+.mr-b3 {
+  margin-bottom: 4rem;
+}
+.pd-1 {
+  padding: 1.5rem;
+}
+.pd-2 {
+  padding: 1.5rem;
+}
+.lg-heading {
+  font-size: 3rem;
+}
+
+.l-spacing {
+  letter-spacing: 1px;
+}
+.md-heading {
+  font-size: 2.5rem;
+}
+.green {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+.white {
+  color: #fff;
+}
+.ln-h {
+  line-height: 2.5rem;
+}
+.bold {
+  font-weight: 600;
+}
+.bc-light {
+  color: white;
+}
+.bc-dark {
+  color: #333;
+}
+/* TOP  */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+/* HEADER  */
+
+#header {
+  background: url(../../img/landing.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 0rem;
+}
+
+#header .landing {
+  /* position: relative; */
+  display: flex;
+  height: inherit;
+  width: 100%;
+  bottom: 2rem;
+  align-items: center;
+  justify-content: start;
+}
+#header .landing-content {
+  max-width: 768px;
+  font-size: 2rem;
+  position: relative;
+}
+
+.nav-cover .container {
+  max-width: 1400px !important;
+}
+/* Navbar */
+.bgcolor.scrolled {
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-cover {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+#navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  padding: 2rem 0;
+}
+#navbar a:hover {
+  background-color: rgba(104, 197, 85, 0.3);
+  color: white;
+}
+#navbar .navigations {
+  display: flex;
+}
+#navbar .navigations li {
+  border-right: 1px solid white;
+  padding-right: 2px;
+}
+#navbar .navigations li:last-child {
+  border-right: 0;
+  padding-right: 2px;
+}
+
+#navbar .logo {
+  width: 150px;
+}
+#navbar .navigations a {
+  padding: 1rem;
+  font-weight: 300;
+}
+
+#green-energy {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+#green-energy p {
+  font-size: 1.2rem;
+}
+
+.carousel {
+  background-color: #444;
+  padding: 3rem 1rem;
+}
+
+.carousel-item {
+  position: relative;
+  left: 25%;
+  padding: 5rem;
+  margin: auto;
+  max-width: 50%;
+}
+
+#carouselExampleIndicators .carousel-item {
+  padding: 0;
+}
+
+/* Vision */
+
+#vsion {
+  padding: 3rem 0;
+  /* background-color: #f4f4f4; */
+}
+#vsion .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+#vsion .grid .leaf {
+  color: green;
+}
+#vsion .grid .award {
+  color: gold;
+}
+
+#vsion .video-content {
+  padding: 3rem 2rem 1rem;
+}
+
+#whyChooseUs {
+  padding: 3rem 1rem;
+  color: white;
+  background-color: #444;
+}
+#whyChooseUs .pic {
+  background: url(../../img/people.jpg) no-repeat center center/cover;
+  height: 500px;
+}
+
+#whyChooseUs .grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+#whyChooseUs .grid-2 {
+  max-width: 600px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  margin: auto;
+}
