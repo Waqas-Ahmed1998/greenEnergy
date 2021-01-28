@@ -193,7 +193,7 @@ li {
   display: flex;
 }
 #navbar .navigations li {
-  border-right: 1px solid gray;
+  border-right: 1px solid #f4f4f4;
   padding-right: 2px;
 }
 #navbar .navigations li:last-child {
