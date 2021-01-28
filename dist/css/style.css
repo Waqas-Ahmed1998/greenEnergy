@@ -174,9 +174,9 @@ li {
   z-index: 1;
 }
 #navbar {
-  position: relative;
+  /* position: relative;
   top: 0;
-  left: 0;
+  left: 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,7 +193,7 @@ li {
   display: flex;
 }
 #navbar .navigations li {
-  border-right: 1px solid white;
+  border-right: 1px solid gray;
   padding-right: 2px;
 }
 #navbar .navigations li:last-child {
