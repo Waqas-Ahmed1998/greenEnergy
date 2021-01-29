@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -82,6 +83,8 @@ li {
 .bgcolor.scrolled {
   transition: 0.2s ease-in-out;
   background-color: rgba(0, 0, 0, 0.7);
+
+  padding-top: 0;
 }
 .font-size1 {
   font-size: 1.2rem;
@@ -162,54 +165,106 @@ li {
 }
 
 #header .landing {
-  /* position: relative; */
+  position: relative;
   display: flex;
   height: inherit;
   width: 100%;
   bottom: 2rem;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
+
 #header .landing-content {
   max-width: 768px;
   font-size: 2rem;
-  position: relative;
+  /* position: relative; */
 }
 
+.carousel {
+  background-color: inherit;
+  padding: 3rem 1rem;
+  top: 70px;
+}
+
+.carousel li {
+  position: relative;
+  bottom: 30px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-item {
+  position: relative;
+  left: 25%;
+  top: 0;
+  /* padding: 3rem 1rem 1rem; */
+  margin: auto;
+  max-width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item .carousel-caption {
+  z-index: 1;
+}
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Navbar */
 .nav-cover .container {
   max-width: 1400px !important;
 }
-/* Navbar */
-
 .nav-cover {
   transition: 0.5s ease-in-out;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 #navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
-  padding: 2rem 0;
+  z-index: 2;
+  padding: 2rem 0 1rem;
 }
 #navbar .upper-links {
   display: flex;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
   justify-content: flex-end;
-  /* padding: 1rem; */
 }
 #navbar .upper-links a {
   padding: 0.5rem;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 #navbar a:hover {
   transition: 0.2s ease-in-out;
 
-  background-color: rgba(104, 197, 85, 0.3);
-  color: white;
+  color: #8bc53f;
 }
 #navbar .navigations {
   display: flex;
@@ -225,14 +280,15 @@ li {
 }
 
 #navbar .logo {
-  width: 150px;
+  width: 130px;
 }
 #navbar .logo-content {
   text-align: center;
 }
 #navbar .navigations a {
   padding: 1rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 /* Green energy  */
 
@@ -242,23 +298,6 @@ li {
 }
 #green-energy p {
   font-size: 1.2rem;
-}
-
-.carousel {
-  background-color: #444;
-  padding: 3rem 1rem;
-}
-
-.carousel-item {
-  position: relative;
-  left: 25%;
-  padding: 5rem;
-  margin: auto;
-  max-width: 50%;
-}
-
-#carouselExampleIndicators .carousel-item {
-  padding: 0;
 }
 
 /* Vision */
@@ -285,8 +324,11 @@ li {
   padding: 3rem 2rem 1rem;
 }
 
+/* **************why choose us section  */
+
 #whyChooseUs {
-  padding: 3rem 1rem;
+  text-align: center;
+  padding: 5rem 1rem;
   color: white;
   background-color: #444;
 }
@@ -298,16 +340,11 @@ li {
 #whyChooseUs .grid {
   display: grid;
   text-align: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  /* padding: 2rem 0; */
   grid-gap: 1rem;
 }
-#whyChooseUs .grid-2 {
-  max-width: 600px;
-  display: grid;
-  text-align: center;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
-  margin: auto;
+#whyChooseUs .grid .items {
 }
 
 /* footer  */
