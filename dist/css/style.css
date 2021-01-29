@@ -35,26 +35,10 @@ li {
 .links {
   position: relative;
 }
-.current-home::after {
-  content: '';
-  position: absolute;
-  bottom: -1rem;
-  right: 1.1rem;
-  width: 40px;
-  height: 2px;
-  display: inline-block;
-  background-color: yellowgreen;
+.current {
+  color: #8bc53f;
 }
-.current-vision::after {
-  content: '';
-  position: absolute;
-  bottom: -1rem;
-  right: 4.2rem;
-  width: 40px;
-  height: 2px;
-  display: inline-block;
-  background-color: yellowgreen;
-}
+
 .btn {
   display: inline-block;
   padding: 0.7rem 0.5rem;
@@ -161,8 +145,6 @@ li {
 /* HEADER  */
 
 #header {
-  background: url(../../img/landing.jpg) no-repeat center center/cover;
-  background-attachment: fixed;
   height: 100vh;
   padding: 0rem;
 }
@@ -177,22 +159,18 @@ li {
   justify-content: center;
 }
 
-#header .landing-content {
+/* #header .landing-content {
   max-width: 768px;
   font-size: 2rem;
   padding-top: 4rem;
-  /* position: relative; */
-}
+
+} */
 
 .carousel {
   background-color: inherit;
-  padding: 3rem 1rem;
-  top: 70px;
 }
-
-.carousel li {
-  position: relative;
-  bottom: 30px;
+.carousel img {
+  height: 100%;
 }
 
 .carousel-control-next,
@@ -213,11 +191,12 @@ li {
 
 .carousel-item {
   position: relative;
-  left: 25%;
-  top: 0;
+  /* left: 25%; */
+  /* top: 0; */
   /* padding: 3rem 1rem 1rem; */
-  margin: auto;
-  max-width: 50%;
+  /* margin: auto; */
+  /* width: 100%; */
+  height: 100vh;
   align-items: center;
   justify-content: center;
 }
