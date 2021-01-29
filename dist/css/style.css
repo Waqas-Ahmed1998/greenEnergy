@@ -137,7 +137,9 @@ li {
 .nav-padding.slideUp {
   transition: 0.2s ease-in-out;
   padding: 0.2rem 0 0.2rem;
+  color: white;
 }
+
 /* TOP  */
 
 .overlay {
@@ -156,7 +158,7 @@ li {
   padding: 0rem;
 }
 
-#header .landing {
+/* #header .landing {
   position: relative;
   display: flex;
   height: inherit;
@@ -164,16 +166,23 @@ li {
   bottom: 2rem;
   align-items: center;
   justify-content: center;
-}
-
-/* #header .landing-content {
-  max-width: 768px;
-  font-size: 2rem;
-  padding-top: 4rem;
-
 } */
 
+#header .landing-content {
+  position: absolute;
+  display: flex;
+  max-width: 768px;
+  font-size: 2rem;
+  height: 100vh;
+  /* text-align: center; */
+  z-index: 1;
+  color: white;
+  align-items: center;
+  /* background-color: inherit; */
+}
+
 .carousel {
+  position: relative;
   background-color: inherit;
 }
 .carousel img {
