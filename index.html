@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -35,10 +36,12 @@
             <li><a href="">NEWS</a> </li>
             <li><a href="">CARRERS</a> </li>
             <li><a href=""> CONTACT</a></li>
+            <li><a href=""> TSX:PL </a> <i class="fas fa-chevron-right"></i></li>
+
           </ul>
           <ul class='navigations'>
-            <li><a class='links current' href="">HOME</a> </li>
-            <li> <a class='links' href="">VISION & MISSION</a> </li>
+            <li><a class='links ' href="">HOME</a> </li>
+            <li> <a class='links' href="#vision">VISION & MISSION</a> </li>
             <li><a class='links' href="">OUR PRODUCTS</a> </li>
             <li><a class='links' href="">VIDEOS</a> </li>
             <li><a class='links' href="">CONTACT US</a> </li>
@@ -56,58 +59,108 @@
       <div class="landing-content">
         <h3 class=''>Pioneer renewable energy company in the Waste-to-Energy domanin</h3>
       </div>
-
     </div>
 
-    <section class="carousel">
 
-      <div id="slider" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#slider" data-slide-to="0" class="active"></li>
-          <li data-target="#slider" data-slide-to="1"></li>
-          <li data-target="#slider" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class=" d-block w-100" src="./img/landing.jpg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>We have all you want</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facere.</p>
-              <div class="btn">Read More</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 " src="./img/carousel-wood.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>We have all you want</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facere.</p>
-              <div class="btn">Read More</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./img/carousel-wood-2.jpg" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>We have all you want</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facere.</p>
-              <div class="btn">Read More</div>
-            </div>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="./img/carousel-wood.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img src="./img/carousel-wood-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>We have all you want</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facere.</p>
+            <div class="btn">Read More</div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
+        <div class="carousel-item">
+          <img src="./img/landing.jpg" class="d-block w-100" alt="...">
+
+        </div>
+
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
 
-    </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img class="d-block w-100" src="./img/landing.jpg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>We have all you want</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facere.</p>
+            <div class="btn">Read More</div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img class="d-block w-100 " src="./img/carousel-wood.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>We have all you want</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facere.</p>
+            <div class="btn">Read More</div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/carousel-wood-2.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>We have all you want</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, facere.</p>
+            <div class="btn">Read More</div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+      <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+    </div> -->
+
+
+
+    <!-- </div>
     </div>
-    </div>
-    </div>
+    </div> -->
   </header>
 
   <section id="green-energy">
@@ -137,7 +190,7 @@
       <h2 class='md-heading bc-dark mr-b3'>WHY CHOOSE <span class='green'>US</span></h2>
       <div class="bottom-line mr-b3"></div>
       <div class="grid">
-        <div class="items box-shadow">
+        <div class="items">
           <i class='fas fa-marker fa-2x card-color'></i>
           <h2 class="mr-1 bold">INTEGRITY</h2>
           <p>When we face a tough decision we never compromise our values and principles. We do what is right, not what
@@ -145,21 +198,21 @@
           <a href="" class="btn">Learn More</a>
         </div>
 
-        <div class="items box-shadow">
+        <div class="items">
           <i class='fas  fa-heart fa-2x card-color'></i>
           <h2 class="mr-1 bold">QUALITY</h2>
           <p>We strive for excellence in all that we do. We set high personal and company standards, and then
             consistently try to exceed them</p>
           <a href="" class="btn">Learn More</a>
         </div>
-        <div class="items box-shadow">
+        <div class="items ">
           <i class="fas fa-handshake fa-2x card-color card-color"></i>
           <h2 class="mr-1 bold ">FLEXIBILITY</h2>
           <p>We believe that flexibility leads to excellence and we tailor all our services to the specific needs of
             each client</p>
           <a href="" class="btn">Learn More</a>
         </div>
-        <div class="items box-shadow">
+        <div class="items ">
           <i class="fas fa-hand-holding-heart fa-2x card-color"></i>
           <h2 class=" bold">OPENNESS & HONESTY</h2>
           <p>We believe that open communication builds trust, which is the foundation of any relationship whether it’s
@@ -175,49 +228,42 @@
 
 
 
-  <!-- <section id="vsion">
+  <section id="vision">
     <div class="container ">
-      <div class="grid">
-        <div class="items pd-1">
-          <p><i class='fas fa-leaf fa-3x leaf'></i></p>
-          <h2>Vision</h2>
-          <p>Our vision is to be pioneer renewable energy company in the Waste-to-Energy domain and emerge as a global
-            leader in Biomass-Pellet manufacturing, being able to pelletize underused organic wastes by benchmarking
-            industry wide best practices.</p>
-        </div>
-        <div class="items pd-1">
-          <p><i class='fas fa-award fa-3x award'></i></p>
-          <h2>MISSION AND VALUES</h2>
-          <p class='l-spacing'>Our vision is to be pioneer renewable energy company in the Waste-to-Energy domain and
-            emerge as a global
-            leader in Biomass-Pellet manufacturing, being able to pelletize underused organic wastes by benchmarking
-            industry wide best practices.</p>
-        </div>
-      </div>
-      <div class="video-content">
-        <iframe width="100%" height="515" src="https://www.youtube.com/embed/RvJI3p0rRTM" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+      <div class="vision-header ">
+        <h2 class="md-heading  bc-light bc-primary">THE MOST RELIABLE PELLET PRODUCER</h2>
       </div>
     </div>
-  </section> -->
+  </section>
+  <section class="visionContent">
+    <div class="container">
+      <div class="content-pic">
+        <img class='box-shadow' src="./img/visionContent.jpg" alt="">
+      </div>
+    </div>
+    <div class="climate">
+      <div class="container">
+        <h2 class="lg-heading mr-y2">Displace Coal Plant The Tree Grow More Trees. Fight Climate Change!</h2>
+      </div>
+    </div>
 
+  </section>
 
   <footer>
 
     <div class="container">
       <h2><img src="https://greenenergy.works/wp-content/uploads/2020/12/green-energy-works.png" alt=""></h2>
-      <div class="grid">
+      <div class=" grid">
         <div class="contact">
-          <i class='fas fa-map-marker-alt fa-3x mr-b '> </i>
+          <i class='fas fa-map-marker-alt fa-2x mr-b '> </i>
           <p class='font-size1'>Sanzipora Budgam, India</p>
         </div>
         <div class="contact">
-          <i class='fas fa-envelope fa-3x mr-b  '> </i>
+          <i class='fas fa-envelope fa-2x mr-b  '> </i>
           <p class='font-size1'><i></i>info@greenenegry.works</p>
         </div>
         <div class="contact">
-          <i class='fas fa-phone fa-3x mr-b '> </i>
+          <i class='fas fa-phone fa-2x mr-b '> </i>
           <p class='font-size1'><i></i>+91-7006836180</p>
         </div>
       </div>
@@ -264,8 +310,12 @@
     })
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

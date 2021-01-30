@@ -15,9 +15,8 @@ html {
   scroll-behavior: smooth;
 }
 a {
-  cursor: pointer;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 .italic {
   /* font-style: italic; */
@@ -76,7 +75,7 @@ li {
   background-color: #8bc53f;
 }
 .box-shadow {
-  box-shadow: 1px 1px 3px#E88900, -1px -1px 3px #e88900;
+  box-shadow: 1px 1px 3px black;
 }
 .bottom-line {
   width: 50px;
@@ -100,7 +99,7 @@ li {
   margin: 1rem 0;
 }
 .mr-y2 {
-  margin: 2rem 0;
+  margin: 5rem 0;
 }
 .mr-b {
   margin-bottom: 1rem;
@@ -133,12 +132,20 @@ li {
 .md-heading {
   font-size: 2.5rem;
 }
-
+.lg-heading {
+  font-size: 3.5rem;
+}
 .card-color {
   color: #e88900;
 }
 .green {
   color: green;
+}
+.text-primary {
+  color: #8bc53f;
+}
+.bc-primary {
+  background-color: #8bc53f;
 }
 .yellow {
   color: yellow;
@@ -187,11 +194,10 @@ li {
   max-width: 768px;
   font-size: 2rem;
   height: 100vh;
-  /* text-align: center; */
+
   z-index: 1;
   color: white;
   align-items: center;
-  /* background-color: inherit; */
 }
 
 .carousel img {
@@ -207,14 +213,13 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
+  width: 50px;
   color: #fff;
   text-align: center;
-  opacity: 1;
+  opacity: 0.8;
   transition: opacity 0.15s ease;
 }
 .carousel-item {
-  position: relative;
   height: 100vh;
 }
 
@@ -265,6 +270,18 @@ li {
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
+
+#navbar .upper-links li:last-child a {
+  background-color: #333;
+  color: #8bc53f;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+}
+#navbar .upper-links i {
+  color: white;
+}
+
 #navbar a:hover {
   transition: 0.2s ease-in-out;
 
@@ -330,30 +347,6 @@ li {
   color: white;
 }
 
-/* Vision */
-
-#vsion {
-  padding: 3rem 0;
-  /* background-color: #f4f4f4; */
-}
-#vsion .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  text-align: center;
-}
-
-#vsion .grid .leaf {
-  color: green;
-}
-#vsion .grid .award {
-  color: gold;
-}
-
-#vsion .video-content {
-  padding: 3rem 2rem 1rem;
-}
-
 /* **************why choose us section  */
 
 #whyChooseUs {
@@ -374,6 +367,7 @@ li {
   color: black;
   display: flex;
   flex-direction: column;
+  border: 1px solid#e88900;
   padding: 2rem 1rem;
 }
 #whyChooseUs .grid .items .btn {
@@ -385,10 +379,62 @@ li {
   transition: 0.2s ease-in-out;
 }
 
+/* ********Vision  */
+#vision {
+  position: relative;
+  background: url(../../img/pelletts-vision.jpg) no-repeat center center/cover;
+  padding: 2rem;
+  height: 70vh;
+  /* width: 100%; */
+}
+#vision:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+#vision .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#vision .vision-header {
+  text-align: center;
+}
+#vision .vision-header h2 {
+  position: relative;
+  display: inline-block;
+  justify-self: center;
+  padding: 0.5rem;
+  z-index: 1;
+  font-weight: bolder;
+}
+
+.visionContent {
+  padding: 3rem 0;
+}
+.visionContent .climate {
+  background-color: #333;
+  color: orange;
+  font-weight: bolder;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.visionContent .climate h2 {
+  padding: 2rem 2rem 1rem 0;
+  line-height: 7rem;
+  word-spacing: 1rem;
+}
 /* footer  */
 
 footer {
-  padding: 4rem 1rem 1rem;
+  padding: 1rem 1rem 0.2rem;
   position: relative;
   background: url(../../img/footer.jpg) no-repeat center center/cover;
   background-color: rgba(0, 0, 0, 0.5);
@@ -402,24 +448,25 @@ footer::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 footer .container {
   text-align: center;
   position: relative;
   z-index: 1;
+  padding: 1rem 0;
   color: white;
 }
 footer .container h2 img {
-  width: 200px;
+  width: 150px;
 }
 footer .container .contact {
-  padding: 2rem 1rem 1rem;
+  padding: 1rem 1rem 1rem;
 }
 footer .grid {
   display: grid;
-  padding: 2rem;
+
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   justify-content: center;
