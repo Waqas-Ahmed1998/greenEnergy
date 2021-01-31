@@ -151,7 +151,7 @@ li {
   font-size: 2.5rem;
 }
 .md-heading2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 .lg-heading {
   font-size: 3.5rem;
@@ -364,7 +364,7 @@ li {
   font-size: 1.2rem;
   color: black;
 }
-#green-energy .btn-large:hover a {
+#green-energy .btn-large:hover {
   transition: 0.2s ease-in-out;
 
   color: white;
