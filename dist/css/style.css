@@ -412,7 +412,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 
@@ -428,11 +428,13 @@ li {
 }
 #vision .vision-header h2 {
   position: relative;
-  display: inline-block;
-  justify-self: center;
-  padding: 0.5rem;
   z-index: 1;
-  font-weight: bolder;
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .visionContent {
@@ -469,7 +471,7 @@ li {
 .product-header {
   position: relative;
   background: url(../../img/productsHeader.png) no-repeat center center/cover;
-  height: 60vh;
+  height: 70vh;
 }
 .product-header:after {
   content: '';
@@ -490,6 +492,14 @@ li {
   height: 100%;
 }
 .product-header > .container h2 {
+  /* position: relative;
+  display: inline-block;
+  justify-self: center;
+  padding: 0.5rem;
+  z-index: 1;
+  font-weight: bolder;
+  color: white; */
+
   color: #fff;
   font-size: 60px;
   line-height: 1.15;
@@ -521,6 +531,71 @@ li {
   width: 100%;
   text-align: center;
 }
+
+/* *****************Videos */
+
+#videos .header {
+  position: relative;
+  background: url(../../img/videoHeader.jpg) no-repeat center center/cover;
+  height: 70vh;
+}
+#videos .header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#videos .header .container h2 {
+  /* position: relative;
+  display: inline-block;
+  justify-self: center;
+  padding: 0.5rem;
+  z-index: 1;
+  font-weight: bolder;
+  color: white; */
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+#videos .header .container {
+  height: inherit;
+  display: grid;
+  align-content: center;
+}
+#videos .video-content {
+  padding: 1rem 0rem;
+}
+#videos .video-content .flex {
+  display: flex;
+}
+#videos .video-content .flex .content {
+  flex: 1;
+  display: flex;
+  border-right: 3px solid #f4f4f4;
+  padding: 3rem 1rem 3rem;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  align-items: center;
+}
+#videos .video-content .flex .video {
+  flex: 1;
+  padding: 0 0 0 1rem;
+}
+#videos .video-content .flex .video iframe {
+  width: 100%;
+  /* height: 100%; */
+}
+
 /* footer  */
 
 footer {
