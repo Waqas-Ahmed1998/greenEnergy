@@ -123,7 +123,7 @@ li {
   margin-top: 8rem;
 }
 .mr-top-1 {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .pd-1 {
   padding: 1.5rem;
@@ -150,6 +150,9 @@ li {
 .md-heading {
   font-size: 2.5rem;
 }
+.md-heading2 {
+  font-size: 2.2rem;
+}
 .lg-heading {
   font-size: 3.5rem;
 }
@@ -165,8 +168,11 @@ li {
 .bc-primary {
   background-color: #8bc53f;
 }
-.yellow {
-  color: yellow;
+.gold {
+  color: gold;
+}
+.orange {
+  color: orange;
 }
 .white {
   color: #fff;
@@ -534,6 +540,9 @@ li {
 
 /* *****************Videos */
 
+#videos {
+  /* padding: 4rem; */
+}
 #videos .header {
   position: relative;
   background: url(../../img/videoHeader.jpg) no-repeat center center/cover;
@@ -578,21 +587,23 @@ li {
 }
 #videos .video-content .flex .content {
   flex: 1;
-  display: flex;
-  border-right: 3px solid #f4f4f4;
+
+  /* border-right: 3px solid #f4f4f4; */
   padding: 3rem 1rem 3rem;
-  border-top-right-radius: 2px;
+  /* border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px; */
   align-items: center;
 }
 #videos .video-content .flex .video {
-  flex: 1;
+  flex: 2;
   padding: 0 0 0 1rem;
+  display: flex;
+  justify-content: center;
 }
 #videos .video-content .flex .video iframe {
-  width: 100%;
+  width: 80%;
   /* height: 100%; */
 }
 
