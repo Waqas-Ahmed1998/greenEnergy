@@ -1,4 +1,7 @@
 /* utily classes  */
+body {
+  overflow-x: hidden;
+}
 .nav-padding {
   transition: 0.2s ease-in-out;
   padding: 6rem 0 0.2rem;
@@ -44,12 +47,7 @@
 .pd-x {
   padding: 0;
 }
-/* .mr-zero {
-  margin-bottom: 0;
-} */
-body {
-  overflow-x: hidden;
-}
+
 /***** Navbar  */
 .logo-content > p {
   display: none;
@@ -69,8 +67,7 @@ body {
   position: absolute;
   right: -12px;
   top: 100%;
-  transition: 0.3s ease-in;
-
+  transition: 0.1s ease-in;
   opacity: 0;
   pointer-events: none;
 }
@@ -85,7 +82,7 @@ body {
   pointer-events: all;
 }
 #navbar .side-links a.nav-active {
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
   opacity: 1;
 }
 #navbar .side-links .navigations {
@@ -107,30 +104,28 @@ body {
   font-weight: 400;
 }
 #navbar .navigations a {
-  border-right: 1px solid gray;
   padding: 0.5rem;
   font-size: 0.8rem;
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
 }
+
 #navbar .side-links .upper-links.b2 {
   margin-bottom: none;
 }
 #navbar .side-links ul a {
-  border: none;
+  border-right: none;
 }
 .burgur-manue {
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   position: relative;
   z-index: 10;
   display: block;
   border: none;
 }
 .burgur-manue.rotate {
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   transform: rotate(90deg);
 }
-
 .carousel-item {
   height: 80vh;
 }
@@ -236,13 +231,11 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-
 #products .grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
-
 #products .grid .characteristics .characteristics-content {
   display: flex;
 }
@@ -261,14 +254,10 @@ body {
   height: 100%;
   width: 300px;
 }
-
 #products .grid .characteristics {
   padding: 0 0.5rem 0 0.5rem;
   font-size: 0.8rem;
-
-  /* height: 50%; */
 }
-
 #products .table-content .table-info {
   width: 100%;
   text-align: center;
@@ -287,7 +276,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
-  /* padding: 4rem 0; */
 }
 
 #videos .header {
@@ -299,9 +287,6 @@ body {
   color: #fff;
   font-size: 30px;
   line-height: 1.15;
-  font-weight: 900;
-  text-align: center;
-  text-transform: uppercase;
 }
 #videos .video-content .flex {
   flex-direction: column;
@@ -314,7 +299,6 @@ body {
   padding: 0 0 0 1rem;
   justify-content: start;
   width: 100%;
-  /* height: 400px; */
 }
 #videos .video-content .flex .video iframe {
   width: 97%;
@@ -324,11 +308,8 @@ footer .grid {
   grid-gap: 1rem;
   justify-content: center;
   font-size: 1rem;
-  /* max-width: 70%; */
 }
-/* footer .container h2 img {
-  width: 100px;
-} */
+
 footer .container .contact {
   padding: 1rem 0;
 }
