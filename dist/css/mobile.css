@@ -69,12 +69,13 @@ body {
   position: absolute;
   right: -12px;
   top: 100%;
-  transition: 0.1s ease-in-out;
+  transition: 0.3s ease-in;
+  /* border-radius: 100%; */
   opacity: 0;
   pointer-events: none;
 }
 #navbar .side-links a {
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
   opacity: 0;
 }
 
@@ -84,7 +85,7 @@ body {
   pointer-events: all;
 }
 #navbar .side-links a.nav-active {
-  transition: 0.4s 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
   opacity: 1;
 }
 #navbar .side-links .navigations {
