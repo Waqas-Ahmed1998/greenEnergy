@@ -21,9 +21,10 @@ a {
   text-decoration: none;
 }
 .italic {
+  font-size: 0.9rem;
   /* font-style: italic; */
-  font-weight: 400;
-  /* opacity: 0.9; */
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 li {
   list-style: none;
@@ -35,9 +36,6 @@ li {
   max-width: 1300px;
 }
 
-.current {
-  color: #8bc53f;
-}
 .labl {
   font-weight: bold;
 }
@@ -285,6 +283,7 @@ li {
 }
 .text-wrap {
   transition: 0.2s ease-in-out;
+
   color: black;
 }
 .burgur-manue {
@@ -313,7 +312,8 @@ li {
 }
 #navbar .upper-links a {
   padding: 0.5rem;
-  font-weight: 400;
+  font-size: 0.7rem;
+  font-weight: 600;
   font-family: 'Lato', sans-serif;
 }
 
@@ -325,7 +325,7 @@ li {
   border-radius: 5px;
 }
 #navbar .upper-links i {
-  color: white;
+  color: rgb(235, 235, 235);
 }
 
 #navbar a:hover {
@@ -350,7 +350,7 @@ li {
 }
 
 #navbar .logo {
-  width: 150px;
+  width: 120px;
 }
 #navbar .logo-content {
   text-align: center;
@@ -359,7 +359,8 @@ li {
 #navbar .navigations a {
   border-right: 1px solid gray;
   padding: 0.5rem;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 600;
   font-family: 'Lato', sans-serif;
 }
 #navbar .navigations li:last-child a {
