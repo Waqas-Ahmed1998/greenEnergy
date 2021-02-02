@@ -10,9 +10,11 @@
 }
 body {
   font-family: 'Lato', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 html {
   scroll-behavior: smooth;
+  font-size: 1rem;
 }
 a {
   color: white;
@@ -30,7 +32,7 @@ li {
 
 .container {
   margin: auto;
-  max-width: 1250px;
+  max-width: 1300px;
 }
 
 .current {
@@ -240,6 +242,11 @@ li {
   opacity: 0.8;
   transition: opacity 0.15s ease;
 }
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: relative;
+  top: 4rem;
+}
 .carousel-item {
   height: 100vh;
 }
@@ -272,18 +279,31 @@ li {
 #navbar {
   position: relative;
   display: flex;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  /* padding: 2rem 0 0.2rem; */
 }
 .text-wrap {
   transition: 0.2s ease-in-out;
   color: black;
 }
+.burgur-manue {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+.burgur-manue div {
+  width: 30px;
+  height: 1px;
+  background-color: lightsteelblue;
+  margin: 8px;
 
+  border: none;
+}
+#navbar .side-links {
+  letter-spacing: 3px;
+}
 #navbar .upper-links {
   font-size: 0.7rem;
   display: flex;
@@ -330,7 +350,7 @@ li {
 }
 
 #navbar .logo {
-  width: 100px;
+  width: 150px;
 }
 #navbar .logo-content {
   text-align: center;
@@ -344,6 +364,7 @@ li {
 }
 #navbar .navigations li:last-child a {
   padding: 0.5rem;
+  border: none;
 }
 /* Green energy  */
 
@@ -632,7 +653,7 @@ footer .container {
   color: white;
 }
 footer .container h2 img {
-  width: 180px;
+  width: 150px;
 }
 footer .container .contact {
   padding: 1rem 1rem 1rem;

@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -49,6 +50,11 @@
             <li><a class='links' href="#footer">CONTACT US</a> </li>
           </ul>
         </div>
+        <div class="burgur-manue">
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+        </div>
 
       </nav>
 
@@ -59,18 +65,18 @@
 
     <div class="container">
       <div class="landing-content">
-        <h3 class=''>Pioneer renewable energy company in the Waste-to-Energy domanin</h3>
+        <h3 class=''>Pioneer renewable energy company in the Waste-to-Energy domain</h3>
       </div>
     </div>
 
 
 
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#slider" data-slide-to="0" class="active"></li>
-        <li data-target="#slider" data-slide-to="1"></li>
-        <li data-target="#slider" data-slide-to="2"></li>
-      </ol>
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+      </ol> -->
 
       <div class="carousel-inner">
         <div class="carousel-item">
@@ -110,7 +116,7 @@
         biomass (or the tree trunk) has been processed and shipped from the forest. These unprocessed residues would
         most likely otherwise go unused as a resource.</p>
       <div class="btn-large mr-y2">Putting underused resources to good use</div>
-      <div class="bottom-line mr-b2"></div>
+      <div class="bottom-line mr-b"></div>
     </div>
     <div class="grid">
       <div class="items"><img src="./img/content-img-1.jpg" alt=""></div>
@@ -247,7 +253,7 @@
               <p class="value">5mm to 35mm</p>
               <p class="value">8%</p>
               <p class="value"> &lt; 50°(&lt;120°F) </p>
-              <p class="value"> >18GJ/t (4.7MWh/t) 5000 to 5200 Cal/kg </p>
+              <p class="value mr-zero"> >18GJ/t (4.7MWh/t) 5000 to 5200 Cal/kg </p>
               <p class="value">>675kg/m3 (42lbs/cu ft.)</p>
               <p class="value">&lt; 2%</p>
               <p class="value">&lt; 3%</p>
@@ -432,29 +438,6 @@
 
 
 
-
-
-
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script> -->
-
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script> -->
-
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script> -->
-
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script> -->
-
-
-
   <script>
     $(window).scroll(function () {
       $('#nav').toggleClass('scrolled', $(this).scrollTop() > 50)
@@ -478,7 +461,18 @@
     })
 
   </script>
+  <script>
+    $('.burgur-manue').click(function () {
+      $('.side-links').toggleClass('nav-active')
+    })
 
+  </script>
+  <script>
+    $('.burgur-manue').click(function () {
+      $('.side-links a').toggleClass('nav-active')
+    })
+
+  </script>
 
 
 
