@@ -69,24 +69,22 @@ body {
   position: absolute;
   right: -12px;
   top: 100%;
-  transition: 0.4s ease-in-out;
+  transition: 0.1s ease-in-out;
   opacity: 0;
   pointer-events: none;
-  /* transform: translateX(100%); */
 }
 #navbar .side-links a {
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   opacity: 0;
 }
 
 #navbar .side-links.nav-active {
-  transition: 0.2s 0.2s ease-in;
+  transition: 0.1s ease;
   opacity: 1;
-  transform: translateX(0%);
   pointer-events: all;
 }
 #navbar .side-links a.nav-active {
-  transition: 0.4s 0.3s ease-in-out;
+  transition: 0.4s 0.2s ease-in-out;
   opacity: 1;
 }
 #navbar .side-links .navigations {
