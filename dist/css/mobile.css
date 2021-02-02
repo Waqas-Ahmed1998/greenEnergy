@@ -65,7 +65,7 @@ body {
   width: 100px;
 }
 #navbar .side-links {
-  background-color: maroon;
+  background-color: #333;
   position: absolute;
   right: -12px;
   top: 100%;
@@ -89,10 +89,9 @@ body {
   opacity: 1;
 }
 #navbar .side-links .navigations {
-  height: 80vh;
+  height: 50vh;
   width: 100vw;
   padding: 0;
-  font-size: 0.8rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -102,7 +101,17 @@ body {
 }
 #navbar .side-links .upper-links {
   justify-content: center;
+}
+#navbar .upper-links a {
   font-size: 0.6rem;
+  font-weight: 400;
+}
+#navbar .navigations a {
+  border-right: 1px solid gray;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
 #navbar .side-links .upper-links.b2 {
   margin-bottom: none;
