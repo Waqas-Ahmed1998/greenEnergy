@@ -295,14 +295,14 @@ li {
 }
 .burgur-manue div {
   width: 30px;
-  height: 1px;
+  height: 2px;
   background-color: lightsteelblue;
   margin: 8px;
 
   border: none;
 }
 #navbar .side-links {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 #navbar .upper-links {
   font-size: 0.7rem;
@@ -445,7 +445,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 0;
 }
 
@@ -518,7 +518,7 @@ li {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .product-header > .container {
@@ -579,7 +579,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 #videos .header .container h2 {
   /* position: relative;

@@ -70,7 +70,7 @@ body {
   right: -12px;
   top: 100%;
   transition: 0.3s ease-in;
-  /* border-radius: 100%; */
+
   opacity: 0;
   pointer-events: none;
 }
@@ -98,7 +98,7 @@ body {
   flex-direction: column;
   border: none;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 #navbar .side-links .upper-links {
   justify-content: center;
@@ -110,12 +110,35 @@ body {
 #navbar .side-links ul a {
   border: none;
 }
-
 .burgur-manue {
   position: relative;
   z-index: 10;
   display: block;
-  margin-right: 5%;
+  border: none;
+}
+.carousel-item {
+  height: 80vh;
+}
+.overlay {
+  height: 80vh;
+}
+
+#header .landing-content {
+  font-size: 2rem;
+  height: 80vh;
+}
+/******** Resources  */
+
+#green-energy .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2rem 0 0;
+}
+#green-energy .grid .items {
+  height: 100%;
+}
+#green-energy .grid .items img {
+  height: inherit;
 }
 
 .text-wrap {
@@ -198,22 +221,26 @@ body {
 #products .grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 1rem;
 }
 
 #products .grid .characteristics .characteristics-content {
   display: flex;
-  /* flex-direction: column; */
 }
 #products .grid .characteristics .characteristics-content .items {
   flex: 1;
-  /* flex-direction: column; */
 }
 #products .grid .characteristics .characteristics-content .items:last-child {
   flex: 2;
-  /* flex-direction: column; */
 }
 #products .grid .image {
-  display: none;
+  margin: auto;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+#products .grid img {
+  height: 100%;
+  width: 300px;
 }
 
 #products .grid .characteristics {
@@ -284,5 +311,5 @@ footer .grid {
   width: 100px;
 } */
 footer .container .contact {
-  padding: 1rem;
+  padding: 1rem 0;
 }
