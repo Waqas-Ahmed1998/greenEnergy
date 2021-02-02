@@ -120,11 +120,17 @@ body {
   border: none;
 }
 .burgur-manue {
+  transition: 0.2s ease-in-out;
   position: relative;
   z-index: 10;
   display: block;
   border: none;
 }
+.burgur-manue.rotate {
+  transition: 0.2s ease-in-out;
+  transform: rotate(90deg);
+}
+
 .carousel-item {
   height: 80vh;
 }
