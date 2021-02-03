@@ -328,4 +328,13 @@ footer .container .contact {
   table td {
     font-size: 10px;
   }
+  footer img {
+    width: 100px !important;
+  }
+  footer .font-size1 {
+    font-size: 0.8rem;
+  }
+  footer .fa-2x {
+    font-size: 1.5rem;
+  }
 }
