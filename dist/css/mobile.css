@@ -313,3 +313,19 @@ footer .grid {
 footer .container .contact {
   padding: 1rem 0;
 }
+
+@media (max-width: 360px) {
+  .mr-zero {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .mr-zero {
+    margin-bottom: 0;
+  }
+  .table th,
+  table td {
+    font-size: 10px;
+  }
+}
