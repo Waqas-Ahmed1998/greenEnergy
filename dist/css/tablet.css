@@ -1,0 +1,13 @@
+#products .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#products .grid .image {
+  margin: auto;
+}
+#products .grid .image img {
+  width: 100%;
+}

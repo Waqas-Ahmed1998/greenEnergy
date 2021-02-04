@@ -1,7 +1,7 @@
-/* utily classes  */
 body {
   overflow-x: hidden;
 }
+/* utily classes  */
 .nav-padding {
   transition: 0.2s ease-in-out;
   padding: 6rem 0 0.2rem;
@@ -76,11 +76,13 @@ body {
   opacity: 0;
 }
 
+/* manu pop up animation  */
 #navbar .side-links.nav-active {
   transition: 0.1s ease;
   opacity: 1;
   pointer-events: all;
 }
+/* manue links animation  */
 #navbar .side-links a.nav-active {
   transition: 0.3s ease-in-out;
   opacity: 1;

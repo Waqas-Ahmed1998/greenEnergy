@@ -10,7 +10,6 @@
 }
 body {
   font-family: 'Lato', sans-serif;
-  /* font-family: 'Montserrat', sans-serif; */
 }
 html {
   scroll-behavior: smooth;
@@ -22,7 +21,6 @@ a {
 }
 .italic {
   font-size: 0.9rem;
-  /* font-style: italic; */
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -35,7 +33,6 @@ li {
   margin: auto;
   max-width: 1300px;
 }
-
 .labl {
   font-weight: bold;
 }
@@ -88,7 +85,6 @@ li {
   width: 100px;
   height: 3px;
   border: none;
-
   background-color: #8bc53f;
 }
 .bgcolor.scrolled {
@@ -189,8 +185,10 @@ li {
 }
 .nav-padding {
   transition: 0.2s ease-in-out;
-  padding: 6rem 0 0.2rem;
+  padding: 4rem 0 0.2rem;
 }
+/* slide up nav animation  */
+
 .nav-padding.slideUp {
   transition: 0.2s ease-in-out;
   padding: 0.2rem 0 0.2rem;
@@ -341,7 +339,6 @@ li {
   color: black;
 }
 #navbar .navigations li {
-  /* border-right: 1px solid #f4f4f4; */
   padding: 0.1rem;
 }
 #navbar .navigations li:last-child {
@@ -432,12 +429,12 @@ li {
 }
 
 /* ********Vision  */
+
 #vision {
   position: relative;
   background: url(../../img/pelletts-vision.jpg) no-repeat center center/cover;
   padding: 2rem;
   height: 70vh;
-  /* width: 100%; */
 }
 #vision:after {
   content: '';
@@ -479,7 +476,6 @@ li {
 }
 
 .visionContent .content {
-  /* flex: 1; */
   padding: 4rem 2rem;
   position: relative;
   z-index: 1;
@@ -556,7 +552,6 @@ li {
 #products .table-content {
   display: flex;
   margin-top: 10rem;
-  /* padding: 4rem 0; */
 }
 #products .table-content .table-info {
   width: 100%;
@@ -565,9 +560,6 @@ li {
 
 /* *****************Videos */
 
-#videos {
-  /* padding: 4rem; */
-}
 #videos .header {
   position: relative;
   background: url(../../img/videoHeader.jpg) no-repeat center center/cover;
@@ -583,13 +575,6 @@ li {
   background-color: rgba(0, 0, 0, 0.8);
 }
 #videos .header .container h2 {
-  /* position: relative;
-  display: inline-block;
-  justify-self: center;
-  padding: 0.5rem;
-  z-index: 1;
-  font-weight: bolder;
-  color: white; */
   position: relative;
   z-index: 1;
   color: #fff;
@@ -623,7 +608,6 @@ li {
 }
 #videos .video-content .flex .video iframe {
   width: 80%;
-  /* height: 100%; */
 }
 
 /* footer  */
@@ -661,7 +645,6 @@ footer .container .contact {
 }
 footer .grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   justify-content: center;
@@ -694,7 +677,6 @@ footer .social ul a {
 footer .social ul a:hover {
   transition: 0.2s ease-in-out;
   border-radius: 50%;
-
   background-color: #444;
   color: rgb(117, 228, 102);
 }
